@@ -25,6 +25,7 @@ class UserController extends Controller
         return $namevalue;
     }
     function fullName($fistName,$middleName,$lastName){
-        return "First Name:" . $fistName . "<br>Middle Name:" . $middleName . "<br>Last Name:" . $lastName;
+        return view('DemoView',['first' => $fistName, 'middle' => $middleName, 'last' => $lastName]);
+        //return "First Name:" . $fistName . "<br>Middle Name:" . $middleName . "<br>Last Name:" . $lastName;
     }
 }
