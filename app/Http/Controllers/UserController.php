@@ -24,4 +24,7 @@ class UserController extends Controller
     function name($namevalue){
         return $namevalue;
     }
+    function fullName($fistName,$middleName,$lastName){
+        return "First Name:" . $fistName . "<br>Middle Name:" . $middleName . "<br>Last Name:" . $lastName;
+    }
 }

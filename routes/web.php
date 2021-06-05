@@ -30,3 +30,4 @@ Route::get('/', [UserController::class, 'home']);
 Route::get('/about', [UserController::class, 'about']);
 Route::get('/contact', [UserController::class, 'contact']);
 Route::get('/name/{namevalue}', [UserController::class, 'name']);
+Route::get('name/{firstName}/{middleName}/{lastName}', [UserController::class, 'fullName']);
