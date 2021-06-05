@@ -31,3 +31,19 @@ Route::get('/about', [UserController::class, 'about']);
 Route::get('/contact', [UserController::class, 'contact']);
 Route::get('/name/{namevalue}', [UserController::class, 'name']);
 Route::get('name/{firstName}/{middleName}/{lastName}', [UserController::class, 'fullName']);
+
+
+Route::group(['prefix'=> 'account'],function(){
+    Route::get('/profile',function(){
+        return "Profile";
+    });
+    Route::get('/login',function(){
+        return "Login";
+    });
+    Route::get('/logout',function(){
+        return "Logout";
+    });
+    Route::get('/signup',function(){
+        return "SignUP";
+    });
+});
